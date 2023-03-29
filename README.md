@@ -2,6 +2,16 @@
 
 You're building a virtual library app, and you need to create a set of classes to represent different types of media. You'll have books, movies, and music, each with their own unique properties. You'll need to create a base class for all media, and several subclasses for specific types of media. You'll also need to create a static method to keep track of the total number of media items in the library.
 
+### Running Code and Tests 
+
+1. You can run any of the files with the command `node PATH_TO_FILE`.
+2. To run the tests, do the following in the root folder of this project:
+
+```shell
+npm install
+npm test
+```
+
 ![Virtual Library Class Diagram](./assets/LibraryClassDiagram.png)
 
 *Underlined items are static method. Italicized items are static properties*
