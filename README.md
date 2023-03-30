@@ -1,3 +1,5 @@
+![logo](https://user-images.githubusercontent.com/44912347/202244850-18dbf275-11cf-44b5-9500-b2fcb5d44d05.jpg)
+
 # Virtual Library 📚
 
 You're building a virtual library app, and you need to create a set of classes to represent different types of media. You'll have books, movies, and music, each with their own unique properties. You'll need to create a base class for all media, and several subclasses for specific types of media. You'll also need to create a static method to keep track of the total number of media items in the library.
