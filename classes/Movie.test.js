@@ -1,4 +1,5 @@
-const { Movie } = require('./Movie')
+const Movie = require('./Movie')
+const Media = require('./Media')
 
 describe('Movie tests', () => {
   test('Can create a new Movie instance that is child of Media', () => {

@@ -1,4 +1,5 @@
-const { Music } = require('./Music')
+const Music = require('./Music')
+const Media = require('./Media')
 
 describe('Music tests', () => {
   test('Can create a new Book instance that is child of Media', () => {

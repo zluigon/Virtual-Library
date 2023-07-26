@@ -1,4 +1,4 @@
-const { Media } = require('./Media')
+const Media = require('./Media')
 
 describe('Media Tests', () => {
   test('Can create instance of Media class', () => {
