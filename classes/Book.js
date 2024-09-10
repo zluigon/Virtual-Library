@@ -21,6 +21,11 @@ class Book extends Media {
         : highestRatedBook
     );
   }
+
+  static calculateAverageRating(books) {
+    const totalRating = books.reduce((sum, book) => sum + book.rating, 0);
+    return parseFloat((totalRating / books.length).toFixed(2));
+  }
 }
 // don't change below
 module.exports = Book;

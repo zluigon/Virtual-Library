@@ -20,6 +20,11 @@ class Movie extends Media {
         : longestMovieDuration
     );
   }
+
+  static calculateAverageRating(movies){
+    const totalRating = movies.reduce((sum, movie) => sum + movie.rating, 0);
+    return parseFloat((totalRating / movies.length).toFixed(2));
+  }
 }
 // don't change below
 module.exports = Movie;

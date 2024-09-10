@@ -43,7 +43,7 @@ describe('Book Tests', () => {
     )
   })
 
-  test('Book has static method highestRating that returns the highest rated book', () => {
+  test('Book has static method highestRating that returns the highest rated book and average rating', () => {
     const book1 = new Book(
       'To Kill a Mockingbird',
       1960,
@@ -69,5 +69,6 @@ describe('Book Tests', () => {
       2.2
     )
     expect(Book.highestRating([book1, book2, book3])).toEqual(book2)
+    expect(Book.calculateAverageRating([book1, book2, book3])).toEqual(3.73)
   })
 })
