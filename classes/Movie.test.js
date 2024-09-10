@@ -43,7 +43,7 @@ describe('Movie tests', () => {
     )
   })
 
-  test('Movie static longestMovie method that returns the movie with the highest rating', () => {
+  test('Movie static longestMovie method that returns the movie with the highest rating and average rating', () => {
     const movie1 = new Movie(
       'Inception',
       2010,
@@ -61,5 +61,6 @@ describe('Movie tests', () => {
       4.7
     )
     expect(Movie.longestMovie([movie1, movie2])).toEqual(movie2)
+    expect(Movie.calculateAverageRating([movie1, movie2])).toEqual(4.6);
   })
 })
